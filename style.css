@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+  }
+  
+  h1 {
+    color: white;
+    font-family: pacifico;
+    font-weight: normal;
+  }
+  
+  p {
+    color: white;
+    font-family: Itim;
+    font-size: 20px;
+  }
+
+  .Header {
+    
+    padding: 60px;
+    text-align: right;
+    background: url(Standard_Mode_Blinking_and_gently_floating_in_-ezgif.com-speed.gif);
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    height: 300px;
+    background-position: 10% 60%;
+    margin-bottom: 50px;
+  }
+
+ /* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	background-color: black;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* Main CSS */
+
+.margin {
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+  .Contact{
+    font-family: Itim;
+
+    body
+    * {box-sizing: border-box;
+      font-family: Itim;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      font-family: Itim;
+    }
+    
+    input[type=submit] {
+      background-color: #826ca4;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: Itim;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #d1c5e2;
+      font-family: Itim;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      font-family: Itim;
+    }
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+  }
+
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+iframe {
+    width: 80%; /* Adjust as needed */
+    height: 90vh; /* Makes it almost full height */
+    border: none; /* Removes border */
+    overflow: hidden; /* Hides scrollbars */
+}
